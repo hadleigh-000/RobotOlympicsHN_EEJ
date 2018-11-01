@@ -54,7 +54,7 @@ void balanceDoDriveTicks();
 
 extern int32_t displacement;
 int32_t prev_displacement=0;
-float pi = 3.1415926535897932384626433832795;
+
 
 LSM6 imu;
 Balboa32U4Motors motors;
@@ -74,7 +74,7 @@ void updatePWMs(float totalDistanceLeft, float totalDistanceRight, float vL, flo
    */
   
 /* ki =4140, kp = 408 */
-  
+  float pi = 3.1415926535897932384626433832795;
 
   int ki = 6000;
   int kp = 600;
